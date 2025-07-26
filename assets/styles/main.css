@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Game';
+    src: url('../../assets/fonts/pokemon-emerald.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: 'Game', sans-serif;
+}
