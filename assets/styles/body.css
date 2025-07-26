@@ -1,0 +1,35 @@
+a:link {
+    color: #363636;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #001838;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #505050;
+}
+
+a:active {
+    color: #b6b6b6;
+    text-decoration: none;
+}
+
+.heading {
+    text-align: center;
+    margin-left: 10%;
+    color: #000000;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 16px 15px;
+}
+
+.main {
+    margin-left: 10%;
+    color: #000000;
+    font-size: 35px;
+    padding: 10px 15px;
+}
