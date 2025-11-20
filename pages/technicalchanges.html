@@ -6,10 +6,9 @@
 
 <html>
 <body>
-    <div class="sidenav">
-        <a href="walkthrough.html">Walkthrough</a>
-        <a href="technicalchanges.html">Technical Changes</a>
-        <a href="acknowledgements.html">Acknowledgements</a>
+    <div class="sidenav" id="sidenav">
+        <script type="module" src="../js/pages.js"></script>
+        <script type="module" src="../js/sidenav.js"></script>
     </div>
     <div class="heading">
         Technical Changes
@@ -19,25 +18,20 @@
         <p>Small changes to the code base that do not greatly impact gameplay.</p>
         <ul>
             <li>Maximum display value of in game clock modified to be 9999:99. <b>This does not change the way time is tracked in game</b>.</li>
+            <li>Pokemon hatch from eggs at level 1.</li>
         </ul>
 
-        <h3>Item Changes</h3>
-        <p>Addition of new items or modification of existing items.</p>
+        <h3>Highly Technical Changes</h3>
         <ul>
-            <li>Added the link stone, which allows for obtaining trade evolutions without trading.</li>
-            <li><b>Fast Ball</b>: Improved catch rate for faster Pokemon.</li>
-            <li><b>Level Ball</b>: Improved catch rate if target is below current Pokemon's level.</li>
-            <li><b>Lure Ball</b>: Improved catch rate for fishing encounters.</li>
-            <li><b>Heavy Ball</b>: Improved catch rate for heavier targets. Reduced catch rate for lighter targets.</li>
-            <li><b>Love Ball</b>: Improved catch rate for targets of the opposite gender to current Pokemon.</li>
-            <li><b>Friend Ball</b>: Increases happiness upon capture.</li>
-            <li><b>Moon Ball</b>: Improved catch rate for Pokemon that evolved using the moon stone.</li>
-            <li><b>Sport Ball</b>: Standard catch rate.</li>
-            <li><b>Dusk Ball</b>: Improved catch rate underground or at night.</li>
-            <li><b>Heal Ball</b>: Heals Pokemon upon capture.</li>
-            <li><b>Quick Ball</b>: Improved catch rate on first turn.</li>
-            <li><b>Cherish Ball</b>: Used for distributing special Pokemon.</li>
+            <li>CPU now goes into low power mode while waiting for Vblank. This makes the game run much more efficient. <b>This change breaks compatibility with vanilla.</b></li>
+            <li>Maps now use Poryscript to define a high-level interface for writing map scripts.</li>
         </ul>
+
+        <h3>Debugging</h3>
+        <ul>
+            <li>Added custom debugging maps to assist in debugging the game. Entering the area requires the DEBUGGER item, which is available in the player's PC when the ANNA_DEBUG flag is defined in config.h.</li>
+        </ul>
+
     </div>
 </body>
 </html>

@@ -25,6 +25,11 @@
     color: #8df7c2;
 }
 
+.sidenav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .image_bottom_left {
     position: fixed;
     bottom: 16px;
